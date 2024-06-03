@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fan Page de Rick y Morty</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Rick y Morty</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Personajes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Galería</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#loginSection">Iniciar Sesión</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#registerSection">Registrarse</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <div class="container mt-4">
+        <h1 class="text-center">Bienvenido a la Fan Page de Rick y Morty</h1>
+        <p class="lead text-center">Aquí encontrarás todo sobre tu serie favorita, sigue las desventuras de un científico, Rick Sánchez, y su fácilmente influenciable nieto, Morty, quienes pasan el tiempo entre la vida doméstica y los Viajes espaciales e intergalácticos.</p>
+    </div>
+
+    
+    <div class="container mt-4">
+        <h2 class="text-center">Personajes</h2>
+        <div class="row" id="characterGallery"></div>
+    </div>
+
+    
+    <div class="container mt-4" id="loginSection">
+        <h2 class="text-center">Inicio de Sesión</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="login-username">Usuario:</label>
+                <input type="text" id="login-username" name="login-username" class="form-control" required />
+            </div>
+            <div class="form-group">
+                <label for="login-password">Contraseña:</label>
+                <input type="password" id="login-password" name="login-password" class="form-control" required />
+            </div>
+            <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+        </form>
+    </div>
+
+    
+    <div class="container mt-4" id="registerSection">
+        <h2 class="text-center">Registro</h2>
+        <form id="registerForm">
+            <div class="form-group">
+                <label for="register-username">Usuario:</label>
+                <input type="text" id="register-username" name="register-username" class="form-control" required />
+            </div>
+            <div class="form-group">
+                <label for="register-password">Contraseña:</label>
+                <input type="password" id="register-password" name="register-password" class="form-control" required />
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Registrarse</button>
+        </form>
+    </div>
+
+    
+    <footer class="footer mt-4">
+        <div class="container text-center">
+          <p>Dirección: 308 de Negra Arroyo Lane,Albuquerque</p>
+          <p>Teléfono: +123456789</p>
+          <p>Email: walterwhite@gmail.com</p>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Facebook</a></li>
+            <li class="list-inline-item"><a href="#">Twitter</a></li>
+            <li class="list-inline-item"><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </footer>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
